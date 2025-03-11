@@ -1,0 +1,19 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+homepage:
+    path: /
+    controller: App\Controller\IndexController::home
+
+save_article:
+    path: /article/save
+    controller: App\Controller\IndexController::save
+
+new_article:
+    path: /article/new
+    controller: App\Controller\IndexController::new
+
+article_list:
+    path: /articles
+    controller: App\Controller\IndexController::list

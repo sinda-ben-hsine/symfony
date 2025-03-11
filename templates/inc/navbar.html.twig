@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
+    <div class="container">
+        <a href="{{ path('article_list') }}" class="navbar-brand">Mohamed Khayati</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-nav" aria-controls="mobile-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mobile-nav">
+            <ul class="navbar-nav ms-auto"> <!-- Changed ml-auto to ms-auto for Bootstrap 5 -->
+                <li class="nav-item">
+                    <a href="{{ path('article_list') }}" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ path('new_article') }}" class="nav-link">Add Article</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ path('new_category') }}" class="nav-link">Ajouter Catégorie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ path('article_par_cat') }}" class="nav-link">Recherche par Catégorie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ path('article_par_prix') }}" class="nav-link">Recherche par Prix</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
